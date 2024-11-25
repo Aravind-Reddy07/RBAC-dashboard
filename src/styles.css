@@ -1,0 +1,214 @@
+/* General */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #1f3c88;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  height: 100%; /* Ensure full height */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar .menu-item {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.sidebar .menu-item.active,
+.sidebar .menu-item:hover {
+  background-color: #345ba7;
+}
+
+.sidebar .menu-item svg {
+  font-size: 18px;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+/* Management Section */
+.management-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.management-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.add-button {
+  padding: 10px 20px;
+  background-color: #1f3c88;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.add-button:hover {
+  background-color: #345ba7;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #1f3c88;
+  color: white;
+}
+
+table td {
+  color: #333;
+}
+
+.status-active {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.status-inactive {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.action-button.edit {
+  color: #007bff;
+}
+.action-button.edit:hover {
+  color: #0a3c71;
+}
+
+.action-button.delete {
+  color: #dc3545;
+}
+
+.action-button.delete:hover {
+  color: #7b0713;
+}
+.role-input{
+  margin:4px;
+  padding: 9px;
+  border-radius: 4px;
+}
+/* Modal */
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal label {
+  margin-top: 10px;
+}
+
+.modal input,
+.modal select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.modal-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.add-button {
+  padding: 10px 20px;
+  background-color: #1f3c88;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  padding: 10px 20px;
+  height: 38px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
