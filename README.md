@@ -10,6 +10,6 @@ ESLint Integration: Ensures clean, maintainable, and error-free code
 
 Installation
 npm run dev
-# or
+or
 yarn dev
 Open http://localhost:5173 with your browser to see the result.
